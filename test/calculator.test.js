@@ -61,3 +61,29 @@ test("Subtracts two negative numbers", () => {
 });
 
 // ----------------------------------------------------------------
+
+test("Devides two positive integers", () => {
+  const actual = calculator.divide(15, 5);
+  const expected = 3;
+  expect(actual).toBe(expected);
+});
+
+test("Devides two decimals", () => {
+  const actual = calculator.divide(1.7, 4.7);
+  const expected = 0.36;
+  expect(actual).toBeCloseTo(expected);
+});
+
+test("Devides two negative integers", () => {
+  const actual = calculator.divide(-50, -10);
+  const expected = 5;
+  expect(actual).toBe(expected);
+});
+
+test("Devides two negetive decimals", () => {
+  const actual = calculator.divide(-1.8, -4.75);
+  const expected = 0.378;
+  expect(actual).toBeCloseTo(expected);
+});
+
+// ----------------------------------------------------------------
