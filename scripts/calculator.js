@@ -8,5 +8,12 @@ let calculator = {
       return a / b;
     }
   },
+  multiply: (a, b) => {
+    if (a === 0 || b === 0) {
+      return 0;
+    } else {
+      return a * b;
+    }
+  },
 };
 export default calculator;

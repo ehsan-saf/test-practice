@@ -80,7 +80,7 @@ test("Devides two negative integers", () => {
   expect(actual).toBe(expected);
 });
 
-test("Devides two negetive decimals", () => {
+test("Devides two negative decimals", () => {
   const actual = calculator.divide(-1.8, -4.75);
   const expected = 0.378;
   expect(actual).toBeCloseTo(expected);
@@ -93,3 +93,35 @@ test("Handles divide by zero", () => {
 });
 
 // ----------------------------------------------------------------
+
+test("Multiplies two positive integers", () => {
+  const actual = calculator.multiply(5, 8);
+  const expected = 40;
+  expect(actual).toBe(expected);
+});
+
+test("Multiplies two negative integers", () => {
+  const actual = calculator.multiply(-5, -4);
+  const expected = 20;
+  expect(actual).toBe(expected);
+});
+
+test("Multiplies two positive decimals", () => {
+  const actual = calculator.multiply(1.4, 4.6);
+  const expected = 6.44;
+  expect(actual).toBeCloseTo(expected);
+});
+
+test("Multiplies one negative and one positive decimal", () => {
+  const actual = calculator.multiply(-1.4, 7.2);
+  const expected = -10.08;
+  expect(actual).toBeCloseTo(expected);
+});
+
+test("Multiplies by zero", () => {
+  const actual = calculator.multiply(-5, 0);
+  const expected = 0;
+  expect(actual).toBe(expected);
+});
+
+// --------------------------------------------------------------
