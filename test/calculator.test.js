@@ -86,4 +86,10 @@ test("Devides two negetive decimals", () => {
   expect(actual).toBeCloseTo(expected);
 });
 
+test("Handles divide by zero", () => {
+  const actual = calculator.divide(5, 0);
+  const expected = NaN;
+  expect(actual).toBe(expected);
+});
+
 // ----------------------------------------------------------------
